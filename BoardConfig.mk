@@ -45,3 +45,6 @@ include vendor/xiaomi/haydn/BoardConfigVendor.mk
 
 # Firmware
 include vendor/xiaomi/haydn-firmware/BoardConfigVendor.mk
+
+# Inherit from proprietary files for Leica Camera
+-include vendor/xiaomi/haydn-miuicamera/products/board.mk

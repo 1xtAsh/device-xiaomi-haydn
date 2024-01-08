@@ -40,6 +40,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_QTI_VIBRATOR_EFFECT_LIB := libqtivibratoreffect.xiaomi
 TARGET_QTI_VIBRATOR_USE_EFFECT_STREAM := true
 
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+
 # Include proprietary files
 include vendor/xiaomi/haydn/BoardConfigVendor.mk
 

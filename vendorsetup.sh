@@ -20,6 +20,10 @@ git clone --depth=1 https://github.com/1xtAsh/vendor-xiaomi-sm8350 -b lineage-21
 echo 'Cloning private keys'
 git clone https://github.com/Los-Ext/vendor_lineage-priv_keys -b lineage-21.0 vendor/lineage-priv/keys
 
+# Bcr 
+echo 'Cloning Bcr'
+git clone https://github.com/Chaitanyakm/vendor_bcr -b main vendor/bcr
+
 # Xiaomi
 echo 'Cloning hardware xiaomi'
 rm -rf hardware/xiaomi && git clone --depth=1 https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
@@ -32,12 +36,5 @@ git clone --depth=1 https://gitlab.com/1xtAsh/vendor_xiaomi_haydn-firmware.git -
 echo 'Cloning Leica camera'
 git clone --depth=1 https://gitlab.com/Alucard_Storm/haydn-miuicamera.git -b fourteen-leica vendor/xiaomi/haydn-miuicamera
 rm -rf hardware/xiaomi/megvii
-
-# Leica patch
-echo 'Adding Leica camera patch'
-cd frameworks/base
-wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/Leicamera/0001-Add-backwards-compatible-CaptureResultExtras-constructor.patch
-patch -p1 <0001-Add-backwards-compatible-CaptureResultExtras-constructor.patch
-cd ../..
 
 echo 'delete vendorsetup.sh from device tree once this is done'

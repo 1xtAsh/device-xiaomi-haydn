@@ -23,6 +23,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    CertifiedPropsAstridxxOverlay \
     HaydnCNSettingsProviderOverlay \
     HaydnCNWifiOverlay \
     HaydnFrameworksOverlay \

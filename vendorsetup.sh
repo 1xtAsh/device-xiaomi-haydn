@@ -2,7 +2,7 @@ echo 'Starting to clone stuffs needed to build for Haydn'
 
 # Device common
 echo 'Cloning common device tree'
-git clone --depth=1 https://github.com/1xtAsh/device-xiaomi-sm8350 -b lineage-21 device/xiaomi/sm8350-common
+git clone --depth=1 https://github.com/1xtAsh/device-xiaomi-sm8350 -b aosp device/xiaomi/sm8350-common
 
 # Kernel
 echo 'Cloning kernel tree'
@@ -18,7 +18,7 @@ git clone --depth=1 https://github.com/1xtAsh/vendor-xiaomi-sm8350 -b lineage-21
 
 # Priv-keys
 echo 'Cloning private keys'
-git clone https://github.com/Los-Ext/vendor_lineage-priv_keys -b lineage-21.0 vendor/lineage-priv/keys
+git clone https://github.com/Los-Ext/vendor_lineage-priv_keys -b lineage-21.0 vendor/aosp/signing/keys
 
 # Bcr 
 echo 'Cloning Bcr'

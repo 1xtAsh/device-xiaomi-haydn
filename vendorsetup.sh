@@ -18,9 +18,9 @@ git clone https://github.com/1xtAsh/vendor-xiaomi-sm8350 -b lineage-21 vendor/xi
 
 # Priv-keys
 echo 'Cloning private keys'
-git clone https://github.com/Los-Ext/vendor_lineage-priv_keys -b lineage-21.0 vendor/lineage-priv/keys
+git clone https://github.com/1xtAsh/vendor_lineage-priv_keys -b lineage-21 vendor/lineage-priv/keys
 
-# Bcr 
+# Bcr
 echo 'Cloning Bcr'
 git clone https://github.com/Chaitanyakm/vendor_bcr -b main vendor/bcr
 

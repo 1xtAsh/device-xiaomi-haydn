@@ -54,6 +54,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Call thr Bcr setup
 $(call inherit-product, vendor/bcr/bcr.mk)
 
+# Vibrator
+$(call soong_config_set,qti_vibrator,effect_lib,libqtivibratoreffect.xiaomi)
+$(call soong_config_set,qti_vibrator,use_effect_stream,true)
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/haydn/haydn-vendor.mk)
 

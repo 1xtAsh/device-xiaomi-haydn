@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from vili V816.0.12.0.UKDEUXM
+# All unpinned blobs below are extracted from vili V816.0.10.0.UKDMIXM
 
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_Bluetooth_cal.acdb
@@ -9,13 +9,13 @@ vendor/etc/acdbdata/Tutu/Tutu_Hdmi_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_Headset_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb
 vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
-vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.10.pmd
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # ACDB libraries
 vendor/lib/libacdb-fts.so
@@ -24,18 +24,17 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 
-# ADSP modules
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
+# ADSP Modules
+vendor/lib/rfsa/adsp/bm2n06.bin
+vendor/lib/rfsa/adsp/bm2n08.bin
+vendor/lib/rfsa/adsp/bm2n13.bin
+vendor/lib/rfsa/adsp/bm2n14.bin
+vendor/lib/rfsa/adsp/bm2n15.bin
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
 vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so
 vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so
 vendor/lib/rfsa/adsp/hrtf5c.bin
-vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
-vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
-vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
-vendor/lib/rfsa/adsp/libQnnHtpSkel.so
-vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
-vendor/lib/rfsa/adsp/libVppQnnHtp.so
 vendor/lib/rfsa/adsp/libadsp_jpege_skel.so
 vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so
@@ -50,11 +49,15 @@ vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib/rfsa/adsp/libhdr_skel.so
 vendor/lib/rfsa/adsp/libmctfengine_skel.so
+vendor/lib/rfsa/adsp/libMIAIHDR_skel.so
 vendor/lib/rfsa/adsp/libmialgo_basic_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_mc_bokeh_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_mfnr_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so
 vendor/lib/rfsa/adsp/libmialgo_sfnr_cdsp_skel.so
+vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so
+vendor/lib/rfsa/adsp/libQnnHtpAltPrepSkel.so
+vendor/lib/rfsa/adsp/libQnnHtpSkel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so
@@ -64,25 +67,27 @@ vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib/rfsa/adsp/libsuper_res_networks.so
 vendor/lib/rfsa/adsp/libvpp_ais_networks.so
+vendor/lib/rfsa/adsp/libVppAisQnnHtp.so
+vendor/lib/rfsa/adsp/libVppQnnHtp.so
 vendor/lib/rfsa/adsp/libvpt_action_recognition.so
-vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin
+vendor/lib/rfsa/adsp/misound_karaoke_res.bin
 vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 
-# Audio (Firmware)
+# Audio firmware
 vendor/firmware/cs35l41-dsp1-diag-revb2.wmfw
+vendor/firmware/cs35l41-dsp1-diag.wmfw
+vendor/firmware/cs35l41-dsp1-diag-z.bin
 vendor/firmware/cs35l41-dsp1-diag-z-RCV-revb2.bin
 vendor/firmware/cs35l41-dsp1-diag-z-revb2.bin
 vendor/firmware/cs35l41-dsp1-diag-z-revb2.wmfw
-vendor/firmware/cs35l41-dsp1-diag-z.bin
 vendor/firmware/cs35l41-dsp1-diag-z.wmfw
-vendor/firmware/cs35l41-dsp1-diag.wmfw
-vendor/firmware/cs35l41-dsp1-spk-prot-RCV-revb2.bin
+vendor/firmware/cs35l41-dsp1-spk-prot.bin
 vendor/firmware/cs35l41-dsp1-spk-prot-RCV.bin
+vendor/firmware/cs35l41-dsp1-spk-prot-RCV-revb2.bin
 vendor/firmware/cs35l41-dsp1-spk-prot-revb2.bin
 vendor/firmware/cs35l41-dsp1-spk-prot-revb2.wmfw
-vendor/firmware/cs35l41-dsp1-spk-prot.bin
 vendor/firmware/cs35l41-dsp1-spk-prot.wmfw
 vendor/firmware/rcv_voice_delta.txt
 vendor/firmware/spk1_playback_delta.txt
@@ -94,10 +99,9 @@ vendor/firmware/spk2_voice_delta.txt
 vendor/lib/hw/audio.primary.lahaina.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/libadm.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioalsa.so
 vendor/lib/libaudiocloudctrl.so
 vendor/lib/libaudioconfigstore.so
+vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libbatterylistener.so
@@ -106,12 +110,14 @@ vendor/lib/libexthwplugin.so
 vendor/lib/libhdmiedid.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libhfp.so
+vendor/lib/libmmhardware.so
 vendor/lib/libqtigef.so
 vendor/lib/libresampler.so
 vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
 vendor/lib/libvideoNS.so;DISABLE_CHECKELF
+vendor/lib/vndk/libxlog.so
 
 # Camera
 vendor/lib64/HDR10plus.so
@@ -575,7 +581,7 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 
-# Display calibration
+# Display Calibration
 vendor/etc/ltm_config_xiaomi_42_08_0a_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/ltm_config_xiaomi_42_08_0b_cmd_mode_dsc_dsi_panel.xml
 vendor/etc/mdss_dsi_k3s_42_02_0a_dsc_cmd_mi.xml
@@ -615,6 +621,29 @@ vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
 # Media (VPU firmware)
+vendor/firmware/vpu20_1v.b00
+vendor/firmware/vpu20_1v.b01
+vendor/firmware/vpu20_1v.b02
+vendor/firmware/vpu20_1v.b03
+vendor/firmware/vpu20_1v.b04
+vendor/firmware/vpu20_1v.b05
+vendor/firmware/vpu20_1v.b06
+vendor/firmware/vpu20_1v.b07
+vendor/firmware/vpu20_1v.b08
+vendor/firmware/vpu20_1v.b09
+vendor/firmware/vpu20_1v.b10
+vendor/firmware/vpu20_1v.b11
+vendor/firmware/vpu20_1v.b12
+vendor/firmware/vpu20_1v.b13
+vendor/firmware/vpu20_1v.b14
+vendor/firmware/vpu20_1v.b15
+vendor/firmware/vpu20_1v.b16
+vendor/firmware/vpu20_1v.b17
+vendor/firmware/vpu20_1v.b18
+vendor/firmware/vpu20_1v.b19
+vendor/firmware/vpu20_1v.mbn
+vendor/firmware/vpu20_1v.mdt
+vendor/firmware/vpu20_1v_unsigned.mbn
 vendor/firmware/vpu20_2v.b00
 vendor/firmware/vpu20_2v.b01
 vendor/firmware/vpu20_2v.b02
@@ -662,9 +691,10 @@ vendor/firmware/vpu20_4v.mbn
 vendor/firmware/vpu20_4v.mdt
 vendor/firmware/vpu20_4v_unsigned.mbn
 
-# NFC configs
+# NFC Configs
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-nxp-pnscr.conf
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 
 # Sensors
@@ -695,16 +725,16 @@ vendor/lib64/hw/vendor.xiaomi.hardware.citsensorservice@1.1-impl.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
 
-# Sensors configs
+# Sensor Configs
 vendor/etc/sensors/config/ak991x_dri_0.json
 vendor/etc/sensors/config/bmp285_0.json
-vendor/etc/sensors/config/bu27030_0.json
 vendor/etc/sensors/config/bu27030_0_back.json
+vendor/etc/sensors/config/bu27030_0.json
 vendor/etc/sensors/config/lsm6dso_0.json
 vendor/etc/sensors/config/sm8350_ak991x_0.json
 vendor/etc/sensors/config/sm8350_bmp285_0.json
-vendor/etc/sensors/config/sm8350_bu27030_0.json
 vendor/etc/sensors/config/sm8350_bu27030_0_back.json
+vendor/etc/sensors/config/sm8350_bu27030_0.json
 vendor/etc/sensors/config/sm8350_bu52053nvx_0.json
 vendor/etc/sensors/config/sm8350_default_sensors.json
 vendor/etc/sensors/config/sm8350_dynamic_sensors.json
@@ -751,8 +781,8 @@ vendor/etc/sensors/config/sns_oem13.json
 vendor/etc/sensors/config/sns_pedometer.json
 vendor/etc/sensors/config/sns_rmd.json
 vendor/etc/sensors/config/sns_rotv.json
-vendor/etc/sensors/config/sns_sar_algo.json
 vendor/etc/sensors/config/sns_sar_algo_1.json
+vendor/etc/sensors/config/sns_sar_algo.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_disabled.json
@@ -769,9 +799,10 @@ vendor/etc/sensors/hals.conf
 vendor/etc/sensors/judge_calibrated.json
 vendor/etc/sensors/sns_reg_config
 
-# Thermal config
+# Thermal configs
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-class0.conf
+vendor/etc/thermald-devices.conf
 vendor/etc/thermal-engine.conf
 vendor/etc/thermal-huanji.conf
 vendor/etc/thermal-india-camera.conf
@@ -784,8 +815,8 @@ vendor/etc/thermal-india-normal.conf
 vendor/etc/thermal-india-phone.conf
 vendor/etc/thermal-india-tgame.conf
 vendor/etc/thermal-india-video.conf
-vendor/etc/thermal-map-india.conf
 vendor/etc/thermal-map.conf
+vendor/etc/thermal-map-india.conf
 vendor/etc/thermal-mgame.conf
 vendor/etc/thermal-navigation.conf
 vendor/etc/thermal-nolimits.conf
@@ -794,7 +825,6 @@ vendor/etc/thermal-phone.conf
 vendor/etc/thermal-region-map.conf
 vendor/etc/thermal-tgame.conf
 vendor/etc/thermal-video.conf
-vendor/etc/thermald-devices.conf
 
 # Touchscreen firmware
 vendor/firmware/st_fts_k3s.ftb
@@ -802,6 +832,7 @@ vendor/firmware/st_fts_k3s.ftb:vendor_ramdisk/lib/firmware/st_fts_k3s.ftb
 vendor/firmware/stm_fts_production_limits.csv
 
 # Vibrator effects
+vendor/firmware/aw8697_haptic.bin
 vendor/firmware/0_click_P_RTP.bin
 vendor/firmware/1_doubelClick_P_RTP.bin
 vendor/firmware/2_tick_P_RTP.bin

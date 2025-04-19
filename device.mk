@@ -48,3 +48,6 @@ $(call inherit-product, vendor/xiaomi/haydn/haydn-vendor.mk)
 
 # Call the Leica Camera setup
 $(call inherit-product-if-exists, vendor/xiaomi/haydn-miuicamera/products/miuicamera.mk)
+
+# Keys
+-include vendor/lineage-priv/keys/keys.mk

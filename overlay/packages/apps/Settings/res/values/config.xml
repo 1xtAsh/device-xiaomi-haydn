@@ -14,5 +14,5 @@
     <bool name="config_show_smooth_display">false</bool>
 
     <!-- DerpFest maintainer -->
-    <string name="maintainer_name">AntiMiUi</string>
+    <string name="derpfest_maintainer">AntiMiUi</string>
 </resources>

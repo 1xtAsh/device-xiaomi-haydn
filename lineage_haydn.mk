@@ -7,8 +7,11 @@
 # Inherit from haydn device
 $(call inherit-product, device/xiaomi/haydn/device.mk)
 
-# Inherit some common Lineage stuff.
+# Inherit some common Derpfest stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+DERPFEST_BUILD_VARIANT := Stable
+DERPFEST_BUILD_TYPE := Community
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := haydn
@@ -23,3 +26,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=haydn_cn
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+

@@ -12,4 +12,7 @@
 
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">false</bool>
+
+    <!-- DerpFest maintainer -->
+    <string name="maintainer_name">AntiMiUi</string>
 </resources>

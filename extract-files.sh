@@ -28,6 +28,11 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${SIGSCAN}" -p "21 00 80 52 7c 00 00 94" -P "21 00 80 52 1F 20 03 D5" -f "${2}"
             ;;
+        vendor/lib/libaudioroute_ext.so | \
+        vendor/lib/hw/audio.primary.lahaina.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libaudioroute.so" "libaudioroute-v34.so" "${2}"
+            ;;
         *)
             return 1
             ;;

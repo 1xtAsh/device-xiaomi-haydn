@@ -10,6 +10,24 @@ $(call inherit-product, device/xiaomi/haydn/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Define rear camera specs
+AXION_CAMERA_REAR_INFO := 108,8,5
+
+# Define front camera specs
+AXION_CAMERA_FRONT_INFO := 20
+
+# Maintainer name
+AXION_MAINTAINER := AntiMiui
+
+# Processor name
+AXION_PROCESSOR := Qualcomm_Snapdragon_888_5G
+
+# Blur
+TARGET_ENABLE_BLUR := true
+
+# Gapps
+WITH_GMS_VARIANT := pico
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := haydn
 PRODUCT_MANUFACTURER := Xiaomi

@@ -5,6 +5,7 @@
 #
 
 COMMON_PATH := device/xiaomi/sm8350-common
+TARGET_PROVIDES_POWERHAL := true
 
 # Inherit from sm8350-common
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)

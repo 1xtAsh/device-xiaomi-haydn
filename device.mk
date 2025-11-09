@@ -61,8 +61,7 @@ $(call soong_config_set,qti_vibrator,use_effect_stream,true)
 $(call inherit-product, vendor/xiaomi/haydn/haydn-vendor.mk)
 
 # Call the Leica Camera setup
-$(call soong_config_set,camera,override_format_from_reserved,true)
-$(call inherit-product-if-exists, vendor/xiaomi/haydn-miuicamera/products/miuicamera.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/miuicamera-haydn/device.mk)
 
 # Sign key
 -include vendor/lineage-priv/keys/keys.mk
